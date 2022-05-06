@@ -32,6 +32,7 @@ function App() {
         if (items.length === 0) {
             alert("아이템을 추가해 주세요!");
         } else {
+            alert(items[0].productId)
             axios.post('http://localhost:8080/api/v1/order', {
                 email: order.email,
                 address: order.address,
